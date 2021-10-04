@@ -554,6 +554,18 @@ var MathImg = /** @class */ (function () {
                 sal[2][i][j] = 0;
             }
         }
+       /* MathImg.erosionar = function (img, vec8) {
+            //variable que guarda el arreglo 3d de la imagen de color
+            var arrImage = img.getArrayImg();
+            //variable donde guardamos la salida
+            var sal = this.initArray(img.getWidth(), img.getHeight());
+            for (var i = 0; i < img.getHeight(); i++) {
+                for (var j = 0; j < img.getWidth(); j++) {
+                    sal[0][i][j] = 0;
+                    sal[1][i][j] = 0;
+                    sal[2][i][j] = 0;
+                }
+            }*/
         var vecinos, valorComp = 4;
         if (vec8)
             valorComp = 8;

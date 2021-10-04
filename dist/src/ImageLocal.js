@@ -18,6 +18,15 @@ var ImageLocal = /** @class */ (function () {
             evt.preventDefault();
             files = evt.dataTransfer.files;
         }
+       /* ImageLocal.prototype.handleFileSelect = function (evt) {
+            var files;
+            if (evt.type === "drop") {
+                evt.stopPropagation();
+                evt.preventDefault();
+                files = evt.dataTransfer.files;
+            }*/
+            
+
         if (evt.type === "change")
             files = evt.target.files; // FileList object
         // files is a FileList of File objects. List some properties.
